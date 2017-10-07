@@ -1,2 +1,2 @@
 # emailApp
-An email web application built using node.js and react
+A web application built using node.js, express,react, mongo DB, stripe to send survey or promotional emails.
