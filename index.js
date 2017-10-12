@@ -6,7 +6,8 @@ const keys = require('./config/keys');
 require('./models/User');
 require('./services/passport');
 
-mongoose.connect(process.env.MONGODB_URI, (err, db) => {
+console.log(keys);
+mongoose.connect(keys.mongoURI, (err, db) => {
     if(err) {
         console.log(err);
     } else {
