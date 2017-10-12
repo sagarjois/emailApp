@@ -1,6 +1,4 @@
-{
-        console.log(err);
-    } else {const express = require('express');
+const express = require('express');
 const mongoose = require('mongoose');
 const cookieSession = require('cookie-session');
 const passport = require('passport');
@@ -10,6 +8,8 @@ require('./services/passport');
 
 mongoose.connect(keys.mongoURI, (err) => {
     if(err) {
+        console.log(err);
+    } else {
         console.log('Connected to DB..');
     }
 });
